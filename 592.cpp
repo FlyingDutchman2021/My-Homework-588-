@@ -5,7 +5,6 @@ using namespace std;
 int main(){
 
     int inputNumber=0, numbers[1050],iter2=0;
-    double middleNumber=0;
     for (int i = 0; i < 1050; i++)
     {
         numbers[i]=0;
@@ -19,7 +18,6 @@ int main(){
         inputNumber=0;
         iter2=0;
         numbersInOrder.clear();
-        middleNumber=0;
 
         //judge exit
         cin>>inputNumber;
@@ -40,7 +38,6 @@ int main(){
             }else{
                 numbersInOrder.insert(numbersInOrder.begin(),numbers[1]);
             }
-            middleNumber=(numbers[0]+numbers[1])/2;
 
             for (int i = 2; i < inputNumber; i++)
             {
